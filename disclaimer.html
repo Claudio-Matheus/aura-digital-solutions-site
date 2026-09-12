@@ -2,13 +2,118 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Disclaimer - Aura Digital Solutions</title>
+  <link rel="icon" type="image/jpeg" href="app_icon.jpeg">
+  <style>
+    :root {
+      --bg-dark: #0b1320;
+      --bg-card: #141f33;
+      --accent-gold: #f5ba13;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #23334d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: rgba(11, 19, 32, 0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .brand span { font-weight: 700; font-size: 1.2rem; }
+
+    .btn-back {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .content-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 40px;
+      border-radius: 16px;
+    }
+
+    h1 {
+      color: var(--accent-gold);
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 15px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      background-color: #070c14;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 80px;
+      font-size: 0.9rem;
+    }
+
+    footer a { color: var(--accent-gold); text-decoration: none; }
+  </style>
 </head>
 <body>
-  <h1>Disclaimer</h1>
-  <p>O aplicativo Clarus é desenvolvido pela Aura Digital Solutions com o objetivo de auxiliar na gestão de orçamentos e processos internos.</p>
-  <p>As informações inseridas e geradas pelo aplicativo são de responsabilidade exclusiva do usuário. A Aura Digital Solutions não se responsabiliza por erros de entrada de dados, interpretações incorretas ou uso indevido das informações fornecidas.</p>
-  <p>Este aplicativo não substitui orientação profissional de natureza financeira, jurídica ou técnica.</p>
-  <p>Para suporte ou dúvidas, entre em contato pelo e-mail: contato@auradigitalsolutions.com.br</p>
+
+<header>
+  <a href="index.html" class="brand">
+    <img src="app_icon.jpeg" alt="Logo Clarus">
+    <span>Clarus</span>
+  </a>
+  <a href="index.html" class="btn-back">&larr; Voltar ao Início</a>
+</header>
+
+<div class="container">
+  <div class="content-card">
+    <h1>Disclaimer / Isenção de Responsabilidade</h1>
+    <p>O aplicativo <strong>Clarus</strong> é desenvolvido pela <strong>Aura Digital Solutions</strong> com o objetivo exclusivo de auxiliar na gestão de orçamentos e processos financeiros internos.</p>
+    <p>As informações inseridas e geradas pelo aplicativo são de responsabilidade única e exclusiva do usuário. A Aura Digital Solutions não se responsabiliza por erros de entrada de dados, interpretações incorretas ou uso indevido das informações fornecidas.</p>
+    <p>Este aplicativo não substitui orientação profissional de natureza contábil, financeira, jurídica ou fiscal, nem atua como emissor oficial de notas fiscais.</p>
+    <p>Para suporte ou dúvidas adicionais, entre em contato pelo e-mail: <a href="mailto:contato@auradigitalsolutions.com.br" style="color: var(--accent-gold);">contato@auradigitalsolutions.com.br</a>.</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Aura Digital Solutions. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
