@@ -2,32 +2,143 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Termos de Uso - Aura Digital Solutions</title>
+  <link rel="icon" type="image/jpeg" href="app_icon.jpeg">
+  <style>
+    :root {
+      --bg-dark: #0b1320;
+      --bg-card: #141f33;
+      --accent-gold: #f5ba13;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #23334d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: rgba(11, 19, 32, 0.95);
+      border-bottom: 1px solid var(--border-color);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .brand span { font-weight: 700; font-size: 1.2rem; }
+
+    .btn-back {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .content-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 40px;
+      border-radius: 16px;
+    }
+
+    h1 {
+      color: var(--accent-gold);
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 15px;
+    }
+
+    h2 {
+      color: var(--text-main);
+      font-size: 1.3rem;
+      margin: 25px 0 10px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #070c14;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 80px;
+      font-size: 0.9rem;
+    }
+
+    footer a { color: var(--accent-gold); text-decoration: none; }
+  </style>
 </head>
 <body>
-  <h1>Contrato de Prestação de Serviços / Termos de Uso</h1>
 
-  <h2>1. Objeto</h2>
-  <p>Este contrato regula o uso do aplicativo Clarus, desenvolvido pela Aura Digital Solutions, destinado à gestão de orçamentos e processos internos.</p>
+<header>
+  <a href="index.html" class="brand">
+    <img src="app_icon.jpeg" alt="Logo Clarus">
+    <span>Clarus</span>
+  </a>
+  <a href="index.html" class="btn-back">&larr; Voltar ao Início</a>
+</header>
 
-  <h2>2. Responsabilidade do Usuário</h2>
-  <p>O usuário é responsável por todas as informações inseridas no aplicativo, incluindo dados financeiros, pessoais ou corporativos. O uso indevido ou incorreto das funcionalidades é de responsabilidade exclusiva do usuário.</p>
+<div class="container">
+  <div class="content-card">
+    <h1>Termos de Uso</h1>
 
-  <h2>3. Limitação de Responsabilidade</h2>
-  <p>A Aura Digital Solutions não se responsabiliza por erros de entrada de dados, interpretações incorretas das informações geradas ou danos diretos e indiretos decorrentes do uso do aplicativo.</p>
+    <h2>1. Objeto</h2>
+    <p>Este contrato regula o uso do aplicativo Clarus, desenvolvido pela Aura Digital Solutions, destinado à gestão de orçamentos e organização de processos financeiros internos.</p>
 
-  <h2>4. Privacidade e Dados</h2>
-  <p>O aplicativo não coleta dados sensíveis sem consentimento expresso. Informações fornecidas pelo usuário são utilizadas apenas para funcionamento interno do aplicativo e não são compartilhadas com terceiros.</p>
+    <h2>2. Responsabilidade do Usuário</h2>
+    <p>O usuário é integralmente responsável por todas as informações inseridas no aplicativo, incluindo dados financeiros, pessoais ou corporativos. O uso indevido das funcionalidades é de responsabilidade exclusiva do usuário.</p>
 
-  <h2>5. Propriedade Intelectual</h2>
-  <p>O aplicativo Clarus, seu código, design e marca são propriedade exclusiva da Aura Digital Solutions. É vedada a reprodução, cópia ou distribuição sem autorização prévia.</p>
+    <h2>3. Limitação de Responsabilidade</h2>
+    <p>A Aura Digital Solutions não se responsabiliza por erros de digitação, falhas na entrada de dados, interpretações incorretas das informações geradas ou quaisquer danos diretos e indiretos decorrentes do uso do aplicativo.</p>
 
-  <h2>6. Vigência e Alterações</h2>
-  <p>Este contrato entra em vigor na data de aceitação pelo usuário e poderá ser atualizado pela Aura Digital Solutions, sendo a nova versão disponibilizada no site oficial.</p>
+    <h2>4. Privacidade e Dados</h2>
+    <p>O aplicativo respeita a sua privacidade e não coleta dados sensíveis sem consentimento expresso. As informações fornecidas são utilizadas exclusivamente para o funcionamento interno do aplicativo e não são comercializadas com terceiros.</p>
 
-  <h2>7. Foro</h2>
-  <p>Fica eleito o Foro Regional de Pinhais, pertencente à Comarca da Região Metropolitana de Curitiba, localizado na Rua Vinte e Dois de Abril, nº 199, bairro Estância Pinhais, CEP 83323-240, para dirimir quaisquer controvérsias oriundas deste contrato.</p>
+    <h2>5. Propriedade Intelectual</h2>
+    <p>O aplicativo Clarus, seu código-fonte, design, logotipo e marca são propriedade exclusiva da Aura Digital Solutions. É vedada a reprodução, cópia, engenharia reversa ou distribuição sem autorização prévia por escrito.</p>
 
-  <p><strong>Contato:</strong> contato@auradigitalsolutions.com.br</p>
+    <h2>6. Vigência e Alterações</h2>
+    <p>Estes termos entram em vigor na data de utilização do aplicativo e poderão ser atualizados periodicamente pela Aura Digital Solutions, sendo a nova versão disponibilizada no site oficial.</p>
+
+    <h2>7. Foro</h2>
+    <p>Fica eleito o Foro Regional de Pinhais, pertencente à Comarca da Região Metropolitana de Curitiba, localizado na Rua Vinte e Dois de Abril, nº 199, bairro Estância Pinhais, CEP 83323-240, para dirimir quaisquer controvérsias oriundas deste termo.</p>
+
+    <p style="margin-top: 30px;"><strong>Contato:</strong> <a href="mailto:contato@auradigitalsolutions.com.br" style="color: var(--accent-gold);">contato@auradigitalsolutions.com.br</a></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Aura Digital Solutions. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
